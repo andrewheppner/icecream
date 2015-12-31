@@ -48,5 +48,11 @@
     "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
     "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
     "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
+  },
+  "dependencies": {
+    "cassowary": "0.0.2",
+    "javascript-lp-solver": "^0.4.1",
+    "js-solver": "0.0.2",
+    "yasmij": "^0.2.6"
   }
 }

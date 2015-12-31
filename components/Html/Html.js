@@ -19,7 +19,9 @@ function Html({ title, description, body, debug }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
         <script src={'/app.js?' + new Date().getTime()} />
+        <script type="text/javascript" src='../node_modules/csp.js-master/index.js'></script>
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
